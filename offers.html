@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>GrillHouse</title>
+        <style>
+            main {
+                background-color: darkred;
+            }
+
+            .offers {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .offer-head {
+                display: flex;
+                width: 100vw;
+                height: 50dvh;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: black;
+                padding: 20px;
+                margin: 10px 0;
+                color: white;
+                text-shadow: 0 0 5px darkred;
+                font-size: 3em;
+            }
+
+            .sales-contact {
+                max-width: 48dvw;
+            }
+
+            .sales-contact-img {
+                border: 2px solid black;
+            }
+
+
+            /*Responsive*/
+            @media screen and (max-width: 1100px) {
+                .sales-contact {
+                    max-width: 100dvw;
+                }
+
+                .offer-head {
+                    font-size: 2rem;
+                }
+
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page_grid">
+            <header>
+                <div class="logo">
+                    <img src="logo.png" alt="logo" class="logo_img">
+                    <h1 class="logo_title">Grill House</h1>
+                </div>
+                <div class="main_menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="offers.html">Offers</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="offers">
+                    <div class="offer-head"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), darkred), url('https://www.periperihermanos.com/wp-content/uploads/2020/03/Chicken-burger.jpg');background-size: 100% 100%;">
+                        <h1>Grill House Offers in Burgers</h1>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/08fcc0f97995b17953110459bac7c67f/67b1ce06a25a64dc4a71581bb39c36c6.jpeg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Grill House <br>Family Pack Offer</h1>
+                            <h3>50% Off from Total<br>Over £30 Orders</h3>
+                            <p>
+                                Chose What Ever you Want Family Pack OFFER
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://b.zmtcdn.com/data/pictures/8/19134408/ad10dc09f45fef62fd1e81ea439c71fc.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Grill House <br> 4 For 2 Offer</h1>
+                            <h3>Order Any Four Burgers <br>GET IT FOR PRICE OF 2 </h3>
+                            <p>
+                                Chose your own any four burgers pay only two burgers price.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/1c528d9f10e28dd15e033858bc8011e5/c9252e6c6cd289c588c3381bc77b1dfc.jpeg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Grill House <br> Party Pack Offer</h1>
+                            <h3>Any Orders More than £80<br> Get 60% Off in total</h3>
+                            <p>
+                                Choose your own more than £80 pay Only 40% that mean you can get 60% offer in your
+                                total.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/a7a56641-43ce-4971-b258-78a283b183ff.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Grill House <br> Couple Offer</h1>
+                            <h3>Buy One Burger Meal And Get one Burger Free</h3>
+                            <p>
+                                Buy any burger as meal you can choose your own one more burger only Free
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offers">
+                    <div class="offer-head"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), darkred), url('https://i0.wp.com/deborahnewell.com/wp-content/uploads/2022/08/bbq-chicken.jpg?fit=1000%2C386&ssl=1');background-size: 100% 100%;">
+                        <h1>Grilled Chicken Offers</h1>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://www.themediterraneandish.com/wp-content/uploads/2020/07/grilled-whole-chicken-recipe-10.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://kristineskitchenblog.com/wp-content/uploads/2023/05/grilled-chicken-recipe-25.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://www.skinnytaste.com/wp-content/uploads/2023/05/Grilled-Chicken-Breast-7-500x500.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://www.spendwithpennies.com/wp-content/uploads/2019/06/Grilled-BBQ-Chicken-SpendWithePennies-4.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offers">
+                    <div class="offer-head"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), darkred), url('https://www.mychicagosteak.com/steak-university/wp-content/uploads/2017/03/400474_TBone-Steak-Fired-Up.jpg');background-size: 100% 100%;">
+                        <h1>Grilled Stack Offers</h1>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://www.seriouseats.com/thmb/xBpjlTGEywUgh43aMVSFcq014lg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__07__20190619-korean-bbq-kalbi-beef-short-ribs-vicky-wasik-21-6d69144cd74a478a81b0286b19cd79ba.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://www.allrecipes.com/thmb/o-d25b25TaEBa_U3a4rcZKErxcc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7497838WestAfricanGrilledBeefSujaChefJohn4x3-075a618471fb468598af85290ac6f100.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://sokolow.pl/sites/default/files/styles/recipe_img/public/images_recipe/stek_z_antrykotu.jpg.png?itok=k2RyFWs5"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://thebigmansworld.com/wp-content/uploads/2023/08/grilled-beef-tenderloin-recipe.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offers">
+                    <div class="offer-head"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), darkred), url('https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/newscms/2022_51/1838902/chinese-heritage-cooking-beijing-lamb-te-main-220208.jpg');background-size: 100% 100%;">
+                        <h1>Grilled Lamp Offers</h1>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://www.chilesandsmoke.com/wp-content/uploads/2022/11/Barbacoa-Lamb-Chops_001-819x1024.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://keviniscooking.com/wp-content/uploads/2016/10/Grilled-Hoisin-Lamb-Loin-Chops1.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://realfoodbydad.com/wp-content/uploads/2016/02/Grilled-Lamb-Chops-_-Real-Food-by-Dad.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-contact">
+                        <div class="sales-contact-img">
+                            <img src="https://assets.epicurious.com/photos/5c93ede3e6249a2fe87f23c2/1:1/w_2560%2Cc_limit/Grilled-Marinated-Leg-of-Lamb-118032019.jpg"
+                                alt="image">
+                        </div>
+                        <div class="sales-contact-desc">
+                            <h1>Welcome to Grill House</h1>
+                            <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                            <p>
+                                Our customers can see there meals being cooked from fresh on our superb open grill by
+                                our dedicated team of chefs who have a combined cooking experience of over 15 years.
+                            </p>
+                            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </main>
+            <footer>
+                <p>&copy; 2024 Grill House. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+
+</html>

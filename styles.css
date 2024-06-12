@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS Resetting */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family: "Poppins", sans-serif;
+
+}
+
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Page Styling */
+.page_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100% 100px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+header {
+    background-color: #e1012b;
+    display: grid;
+    grid-template-columns: 20dvw 80dvw;
+}
+
+.logo {
+    height: 100px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+}
+
+.logo_img {
+    object-fit: cover;
+    background-color: #1e1f22;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.logo_title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0 2px 0 10px;
+    align-self: center;
+    justify-self: center;
+    text-shadow: 1px 1px 3px darkred;
+}
+
+.main_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_menu ul {
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    justify-content: center;
+
+}
+
+.main_menu nav ul li {
+    padding: 0 2dvw;
+    transition: transform .2s;
+}
+
+.main_menu nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.main_menu nav ul li:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Main Section*/
+main {
+    background-color: wheat;
+}
+
+.hero {
+    display: flex;
+    height: 60vh;
+    /* width: 99vw; */
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Footer Section */
+footer {
+    background-color: #e1012b;
+    border-top: 2px solid black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sales-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0 20px 0;
+}
+
+.sales-contact-img {
+    box-shadow: 0 0 10px black;
+}
+
+.sales-contact-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sales-contact-desc {
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: grid;
+    grid-auto-rows: min-content;
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.33);
+}
+
+.sales-contact-desc h1 {
+    color: gold;
+    text-shadow: 0 0 5px black;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.sales-contact-desc h3 {
+    color: darkred;
+    padding-bottom: 1.5rem;
+    text-shadow: 0 0 2px darkred;
+}
+
+.sales-contact-desc p {
+    color: white;
+}
+
+.call-us-btn {
+    background-color: #e1012b;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 1em;
+    color: white;
+    margin: 2em 0 0 0;
+    width: 100%;
+}
+
+
+
+
+
+/*Responsive*/
+@media screen and (max-width: 798px) {
+    .logo_title {
+        display: none;
+    }
+
+    .main_menu nav ul {
+        font-size: .9rem;
+    }
+
+    .active {
+        font-size: 1rem;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .sales-contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sales-contact-img {
+        width: 100dvw;
+        max-height: 400px;
+    }
+
+    .sales-contact-desc {
+        width: 100dvw;
+    }
+
+}

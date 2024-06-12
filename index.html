@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>GrillHouse</title>
+    <style>
+        .special {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 2rem;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px;
+        }
+        .special-item {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+            border: 0.75rem solid darkred;
+            box-shadow: 0 0 red, 0 0 1rem black;
+        }
+        .special-item img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .special-desc{
+            text-align: center;
+            background-color: black;
+            color: white;
+            box-shadow: 0 0 1rem black;
+            padding: 1rem;
+        }
+        .special-desc h1{
+            transform: scale(1.2);
+            color: red;
+        }
+        .special-desc h3{
+            color: gold;
+        }
+
+        .award-sec{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .award-clip{
+            background-color: black;
+            color: white;
+            justify-content: center;
+            text-align: center;
+            padding: 4em 2em;
+            margin: 20px 0;
+            min-width: 344px;
+            box-shadow: 0 0 10px black;
+        }
+        .award-icon{
+            font-size: 10em;
+            color: gold;
+            text-shadow: 0 0 5px white;
+            margin: 40px;
+            transition:all 0.5s ease-in-out;
+        }
+        .award-clip h1{
+            color: red;
+            margin: 20px;
+            font-size: 2em;
+        }
+        .award-clip p{
+            line-height: 2;
+            color: yellow;
+            font-size: 1.2em;
+        }
+        .five-stars{
+            font-size: 1.5em;
+            line-height: 2;
+            font-weight: bold;
+            text-shadow: 0 0 10px red;
+            transition: all 0.5s ease-in-out;
+        }
+        .award-clip:hover .award-icon{
+            transform: scale(1.4);
+        }
+        .award-clip:hover .five-stars{
+            transform: scale(1.4);
+        }
+    </style>
+</head>
+<body>
+<div class="page_grid">
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="logo" class="logo_img">
+        <h1 onmouseover="changeHeader()" onmouseout="changeHeader1()" id="webName">Grill House</h1>
+    </div>
+    <div class="main_menu">
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="hero" style="background-image: url('https://images.smiletemplates.com/uploads/screenshots/151/0000151621/powerpoint-template-450w.jpg');"></div>
+    <div class="special">
+        <div>
+            <div class="special-item">
+                <img src="https://i.ebayimg.com/images/g/85UAAOSw5K5c~7p0/s-l400.jpg" alt="Image">
+            </div>
+            <div class="special-desc">
+                <br>
+                <h3>GrillHouse <br> Special Burger</h3>
+                <br>
+                <h1>£1.99 Only</h1>
+                <br>
+                <h4>Special recipe and secret ingredients by Grill House for your unforgettable movements </h4>
+            </div>
+        </div>
+        <div>
+            <div class="special-item">
+                <img src="https://ashpazi.co.uk/wp-content/uploads/2023/10/Chicken.jpg" alt="Image">
+            </div>
+            <div class="special-desc">
+                <br>
+                <h3>GrillHouse <br> Special Grill Chicken</h3>
+                <br>
+                <h1>£3.99 Only</h1>
+                <br>
+                <h4>Special recipe and secret ingredients by Grill House for your unforgettable movements </h4>
+            </div>
+        </div>
+        <div>
+            <div class="special-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/63447d91b47899788bad28be/1345c868-7568-4a28-999f-60a4d82ae144/BarringtonGrill_Aug22-093.jpg" alt="Image">
+            </div>
+            <div class="special-desc">
+                <br>
+                <h3>GrillHouse <br> Family Grill Feast</h3>
+                <br>
+                <h1>£8.99 Only</h1>
+                <br>
+                <h4>for 4 person 10 variety grill meal Choice by you by Grill House for your unforgettable movements </h4>
+            </div>
+        </div>
+    </div>
+    <div class="sales-contact">
+            <div class="sales-contact-img">
+                <img src="https://www.mychicagosteak.com/steak-university/wp-content/uploads/2022/03/grilling-ribeye-steak-2.jpg" alt="image">
+            </div>
+            <div class="sales-contact-desc">
+                <h1>Welcome to Grill House</h1>
+                <h3>Grill House has a charcoal grill that provides fresh grilled meat and fish dishes</h3>
+                <p>Our customers can see there meals being cooked from fresh on our superb open grill by our dedicated team of chefs who have a combined cooking experience of over 15 years. Share a meal with family and friends in traditional Turkish style at Grill House – the spirit of fine restaurant Turkish food, a family atmosphere and a warm welcome make this a superb place to experience gorgeous traditional dishes. Here in this brilliant, relaxed and happy family friendly atmosphere you can taste the finest meals that will make you want to come back time and time again.
+                </p>
+                <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+            </div>
+    </div>
+    <div class="award-sec">
+        <div class="award-clip">
+            <i class="fa-solid fa-medal award-icon"></i>
+            <h1>Best Quality</h1>
+            <p>Grill House Flavors <br> High Quality food</p>
+        </div>
+        <div class="award-clip">
+            <i class="fa-solid fa-business-time award-icon"></i>
+            <h1>On Time</h1>
+            <p>Every Day <br> 12.00pm to 23.00pm</p>
+        </div>
+        <div class="award-clip">
+            <i class="fa-solid fa-fire-burner award-icon"></i>
+            <h1>Chefs</h1>
+            <p>Present deque<br>mattes premium.</p>
+        </div>
+        <div class="award-clip">
+            <i class="fa-solid fa-star award-icon"></i>
+            <h1>Taste Food</h1>
+            <p>Food hygiene ratings <br>
+                <span>
+                    <i class="fa-solid fa-star five-stars"></i>
+                    &nbsp;
+                    <i class="fa-solid fa-star five-stars"> </i>
+                    &nbsp;
+                    <i class="fa-solid fa-star five-stars"> </i>
+                    &nbsp;
+                    <i class="fa-solid fa-star five-stars"> </i>
+                    &nbsp;
+                    <i class="fa-solid fa-star five-stars"> </i>
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="sales-contact">
+
+        <div class="sales-contact-desc">
+            <h1>Specials in Grill House</h1>
+            <h3>Grilling a whole chicken on the grill</h3>
+            <p>
+                Grilling a whole chicken on the grill can be a fantastic way to showcase your culinary skills and impress your guests. By choosing the right chicken, properly preparing it, and mastering the grilling technique, you can achieve a deliciously moist and flavorful result. So, fire up your grill, follow these steps, and enjoy a mouthwatering grilled whole chicken that will surely become a crowd favorite!
+            </p>
+            <a href="contact.html"><button class="call-us-btn">Call Us To Order</button></a>
+        </div>
+        <div class="sales-contact-img">
+            <img src="https://recipes.net/wp-content/uploads/2023/10/how-to-cook-a-whole-chicken-on-the-grill-1697717486.jpg" alt="image">
+        </div>
+    </div>
+</main>
+<footer><p>&copy; 2024 Grill House. All rights reserved.</p></footer>
+</div>
+</body>
+<script src=" script.js"></script>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+      font-family: Arial;
+      font-size: 17px;
+      padding: 8px;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      margin: 0 -16px;
+    }
+    
+    .col-25 {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+    }
+    
+    .col-50 {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+    }
+    
+    .col-75 {
+      -ms-flex: 75%; /* IE10 */
+      flex: 75%;
+    }
+    
+    .col-25,
+    .col-50,
+    .col-75 {
+      padding: 0 16px;
+    }
+    
+    .container {
+      background-color: #f2f2f2;
+      padding: 5px 20px 15px 20px;
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+    }
+    
+    input[type=text] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    .icon-container {
+      margin-bottom: 20px;
+      padding: 7px 0;
+      font-size: 24px;
+    }
+    
+    .btn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      width: 100%;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    a {
+      color: #2196F3;
+    }
+    
+    hr {
+      border: 1px solid lightgrey;
+    }
+    
+    span.price {
+      float: right;
+      color: grey;
+    }
+    
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column-reverse;
+      }
+      .col-25 {
+        margin-bottom: 20px;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+
+    <h3>Responsive Checkout Form</h3>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+          
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="john@example.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="New York">
+    
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="NY">
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="10001">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="btn">
+          </form>
+        </div>
+      </div>
+      <div class="col-25">
+        <div class="container">
+          <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+          <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+          <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+          <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+          <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+          <hr>
+          <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+        </div>
+      </div>
+    </div>
+    
+    </body>
+</html>
